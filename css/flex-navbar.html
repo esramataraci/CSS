@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="">
+    
+</head>
+<style>
+    *{padding: 0; margin: 0;}
+    nav{display: flex ; background-color: goldenrod; justify-content: space-between; padding: 0 20px;}
+    .navigation {list-style: none; display:flex ;  }
+    .navigation a {text-align: center; padding: 16px;}
+    nav a {color: #fff;text-decoration: none; display: block; padding: 10px; border-top: 1px solid rgb(255, 255,255, 0.3);border-bottom: 1px solid rgb(255, 255,255, 0.3);}
+    nav a:hover {background-color: rgb(233, 184, 61);}
+    .navigation li:last-child{display: none;}
+    @media(max-width:600px) {nav{flex-direction: column; text-align: center; } .navigation{flex-direction: column;} .navigation li:last-child{display: block; position: absolute; top: 0; right:10px;}
+    .responsive .navigation li:not(:last-child){display: none; } .logo{display: flex; margin-right: auto; }
+ } 
+    
+</style>
+<body>
+    <nav class="responsive">
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product </a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-grip-lines"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- javascript kodu calismiyor -->
+    <script>
+        function displayMenu(){
+            var link = document.getElementById("navigation");
+            link.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
